@@ -8,3 +8,8 @@ imagesToPopup.forEach(el => {
         myModal.show()
     })
 })
+
+setTimeout(function () {
+    var msnry = new Masonry('#popunImages');
+    msnry.layout();
+  }, 1000);
