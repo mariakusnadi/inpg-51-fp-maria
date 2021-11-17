@@ -12,4 +12,4 @@ imagesToPopup.forEach(el => {
 setTimeout(function () {
     var msnry = new Masonry('#popupImages');
     msnry.layout();
-  }, 1000);
+}, 1000);
