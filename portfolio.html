@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet"  href="./style.css">
+            
+        <title>Portfolio</title>
+    </head>
+    <body style="padding-top: 200px;">
+        <!-- NAV -->
+        <nav class="px-md-5 py-2 navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="images/logo-maria-photography.png" height="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="nav float-end justify-content-end collapse navbar-collapse" id="navbarCollapse">
+                    <li class="nav-item">
+                        <a class="nav-link"href="./index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">Tentang</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./todo.html">To Do App</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Portfolio -->
+        <div class="px-4 text-center col-md-6 m-auto mb-5">
+            <h1>Penglaman Kami</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architectoeaque ipsa quae ab illo inventore.</p>
+        </div>
+        <p class="text-center">Pilih Kota</p>
+        <div class="container d-flex justify-content-around justify-content-md-center flex-wrap m-auto align-content-center">
+            <button class="btn btn-primary me-md-2 me-0 mb-2" onclick="filterByLocation('Semua')">Semua</button>
+            <button class="btn btn-primary me-md-2 me-0 mb-2" onclick="filterByLocation('Jakarta')">Jakarta</button>
+            <button class="btn btn-primary me-md-2 me-0 mb-2" onclick="filterByLocation('Bandung')">Bandung</button>
+            <button class="btn btn-primary me-md-2 me-0 mb-2" onclick="filterByLocation('Semarang')">Semarang</button>
+            <button class="btn btn-primary me-md-2 me-0 mb-2" onclick="filterByLocation('Yogyakarta')">Yogyakarta</button>
+            <button class="btn btn-primary mb-2" onclick="filterByLocation('Malang')">Malang</button>
+        </div>
+        <div class="container p-5">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col custom-card" data-category="Jakarta">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 2.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of John and Jane</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Jakarta, Indonesia
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            10 Oktober 2021
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col custom-card" data-category="Bandung">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 3.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of Daniel and Cindy</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Bandung
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            8 September 2021
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col custom-card" data-category="Surabaya">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 4.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of David and Maggie</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Surabaya
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            5 Juli 2021
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col custom-card" data-category="Jakarta">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 12.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of Jared and Christina</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Jakarta
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            28 Mei 2021
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col custom-card" data-category="Semarang">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 6.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of Micah and Cynthia</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Semarang
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            16 Maret 2021
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col custom-card" data-category="Yogyakarta">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 7.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of Manuel and Febby</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Yogyakarta
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            10 Februari 2021
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col custom-card" data-category="Malang">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 8.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of Paul and Gina</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Malang
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            18 Januari 2021
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col custom-card" data-category="Bandung">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 1.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of Thomas and Odette</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Bandung
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            27 Desember 2020
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col custom-card" data-category="Jakarta">
+                    <a href="./portfolio-project.html">
+                        <div class="card card-cover h-100 overflow-hidden text-white rounded-3 shadow-sm custom-background" style="background-image: url('./images/foto\ 10.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6">Wedding of Benny and Miriam</h3>
+                                <ul class="list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3 mb-3">
+                                        <span class="material-icons me-2">
+                                            place
+                                        </span>
+                                        <span>
+                                            Jakarta
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <span class="material-icons me-2">
+                                            event
+                                        </span>
+                                        <span>
+                                            25 November 2020
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="container border-top py-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="./images/logo-nama-maria-photography.png">
+                    <p class="mt-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="mt-2">Copyright 2021 Maria Kusnadi</p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        Jl. Lorem Ipsum no. xx<br/>
+                        Daerah<br/>
+                        Kota<br/>
+                        Negara<br/>
+                        (021) 1234 1234 123
+                    </p>
+                </div>
+                <div class="col-md-3 my-md-0 my-5">
+                    <ul id="footer-menu" class="nav">
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./about.html">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link active" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./contact.html">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./todo.html">To Do App</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p>Dapatkan promo menarik dari kami</p>
+                    <form>
+                        <input type="email" class="form-control d-block mb-2" id="emailinput" placeholder="Email">
+                        <button class="btn btn-sm btn-primary d-block">Ya, saya mau!</button>
+                    </form>
+                    <p class="mt-5">Terhubung dengan Kami</p>
+                    <div class="d-flex">
+                        <span class="social-media me-2"><img src="./images/001-facebook.svg" width="36px"></span>
+                        <span class="social-media me-2"><img src="./images/011-instagram.svg"width="36px"></span>
+                        <span class="social-media me-2"><img src="./images/013-twitter.svg"width="36px"></span>
+                        <span class="social-media"><img src="./images/008-youtube.svg"width="36px"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+        <script>
+            function filterByLocation(lokasi){
+                let arrLokasi = Array.from(document.querySelectorAll("[data-category]"))
+                let arrLokasiBaru = arrLokasi.filter((cat) => {return cat.getAttribute("data-category") === lokasi})
+                if (lokasi === 'Semua') {
+                    arrLokasiBaru = arrLokasi
+                } else {
+                    arrLokasi.forEach(el => {
+                        el.style.display = "none"
+                    });
+                }
+
+                arrLokasiBaru.forEach(el => {
+                    el.style.display = "block"
+                });
+            }
+        </script>
+    </body>
+</html>

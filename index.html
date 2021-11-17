@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="./style.css">
+        <title>Wedding Photographer</title>
+    </head>
+    <body>
+        <!-- NAV -->
+        <nav class="px-md-5 py-2 navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo-maria-photography.png" height="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="nav float-end justify-content-end collapse navbar-collapse" id="navbarCollapse">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./todo.html">To Do App</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- HEADER -->
+        <!-- Jumbotron on large screen -->
+        <div id="jumbotron" class="min-vh-100 position-relative d-none d-md-block">
+            <div class="container position-absolute top-50 start-50 translate-middle w-75">
+                <h1 class="w-50 text-white">Abadikan Momen di Hari Istimewa Anda</h1>
+                <p class="w-50 text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis eros quis eros ullamcorper placerat. Phasellus aliquet malesuada lacus, at sagittis eros vehicula vel. Sed pretium, lacus sit amet interdum tristique, sem nisl bibendum neque, vel feugiat odio dui luctus sapien. Etiam sit amet posuere lorem.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupPrice">Pesan Sekarang</button>
+            </div>
+        </div>
+        <!-- Jumbotron on small screen-->
+        <div id="jumbotron" class="min-vh-100 position-relative d-block d-md-none">
+            <div class="container position-absolute top-50 start-50 translate-middle p-4">
+                <h1 class="text-white">Abadikan Momen di Hari Istimewa Anda</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis eros quis eros ullamcorper placerat. Phasellus aliquet malesuada lacus, at sagittis eros vehicula vel. Sed pretium, lacus sit amet interdum tristique, sem nisl bibendum neque, vel feugiat odio dui luctus sapien. Etiam sit amet posuere lorem.</p>
+                <button type="button" class="btn btn-primary btn-custom1 position-absolute start-50 mt-3 translate-middle" data-bs-toggle="modal" data-bs-target="#popupPrice">Pesan Sekarang</button>
+            </div>
+        </div>
+        <!-- MODAL BOX -->
+        <div class="modal fade" id="popupPrice" tabindex="-1" aria-labelledby="popupPrice" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="popupTitle">Pilih Paket Pilihan Anda</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-bordered table-responsive align-middle text-center">
+                      <thead>
+                          <tr>
+                              <th class="col-4">Paket Ruby</th>
+                              <th class="col-4">Paket Sapphire</th>
+                              <th class="col-4">Paket Diamond</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1 Fotografer</td>
+                              <td>2 Fotografer</td>
+                              <td>Fotografer dan Videografer</td>
+                          </tr>
+                          <tr>
+                              <td>4 Jam</td>
+                              <td>6 Jam</td>
+                              <td>8 Jam</td>
+                          </tr>
+                          <tr>
+                              <td>Album 30 halaman</td>
+                              <td>Album 40 halaman</td>
+                              <td>Album 50 halaman + Film pendek pernikahan 60 menit</td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td>Termasuk foto yang sudah diedit dalam USB</td>
+                              <td>Termasuk foto dan video yang sudah dan belum diedit dalam USB</td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td>Sesi foto sebelum acara dimulai</td>
+                          </tr>
+                      </tbody>
+                      <tfoot>
+                          <tr>
+                              <td><button class="btn btn-sm btn-primary">Pesan Sekarang</button></td>
+                              <td><button class="btn btn-sm btn-primary">Pesan Sekarang</button></td>
+                              <td><button class="btn btn-sm btn-primary">Pesan Sekarang</button></td>
+                          </tr>
+                      </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- SERVICES -->
+        <div class="container py-5 mb-5">
+            <h2 class="text-center">Pilihan Paket untuk Hari Pernikahan Anda</h2>
+            <p class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col mb-2">
+                    <div class="card">
+                        <div class="card-body p-4">
+                        <h5 class="card-title">Paket Ruby</h5>
+                        <p class="card-text">Aliquam egestas sem nibh. Quisque scelerisque, eros et tempus lacinia, leo tellus pretium lectus, ac bibendum magna sapien ut mauris.</p>
+                        <a href="#" class="card-link">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <div class="card-body p-4">
+                        <h5 class="card-title">Paket Sapphire</h5>
+                        <p class="card-text">Aliquam egestas sem nibh. Quisque scelerisque, eros et tempus lacinia, leo tellus pretium lectus, ac bibendum magna sapien ut mauris.</p>
+                        <a href="#" class="card-link">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <div class="card-body p-4">
+                        <h5 class="card-title">Paket Diamond</h5>
+                        <p class="card-text">Aliquam egestas sem nibh. Quisque scelerisque, eros et tempus lacinia, leo tellus pretium lectus, ac bibendum magna sapien ut mauris.</p>
+                        <a href="#" class="card-link">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- GALLERY -->
+        <div class="container mb-5">
+            <h2 class="text-center">Galeri Foto</h2>
+            <p class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="popupImages" data-masonry='{"percentPosition": true }'>
+                <div class="col-md-3"><img src="./images/foto 1.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 11.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 8.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 2.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 3.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 4.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 5.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 6.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 7.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 9.jpg" width="100%"></div>
+                <div class="col-md-3"><img src="./images/foto 10.jpg" width="100%"></div>
+            </div>
+        </div>
+        <!-- POP UP IMAGES -->
+        <div id="previewImage" class="modal show vh-100">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TESTIMONI -->
+        <div id="testimoni" class="container mb-5 w-75">
+            <div id="carouselTestimoni" class="carousel carousel-dark carousel-fade slide min-vh-100" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselTestimoni" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselTestimoni" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselTestimoni" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner p-5 position-relative" style="height:100vh;">
+                    <div class="carousel-item active w-75 position-absolute top-50 start-50 translate-middle" data-bs-interval="2000">
+                        <h5 class="text-center">John and Jane</h5>
+                        <p class="text-center">Pellentesque ultricies dignissim nibh at semper. Ut tempus consectetur leo, vel placerat velit mollis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dictum massa vel sapien consectetur condimentum. </p>
+                    </div>
+                  <div class="carousel-item w-75 position-absolute top-50 start-50 translate-middle" data-bs-interval="2000">
+                        <h5 class="text-center">Daniel and Cindy</h5>
+                        <p class="text-center">Pellentesque ultricies dignissim nibh at semper. Ut tempus consectetur leo, vel placerat velit mollis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dictum massa vel sapien consectetur condimentum. </p> 
+                  </div>
+                  <div class="carousel-item w-75 position-absolute top-50 start-50 translate-middle" data-bs-interval="2000">
+                        <h5 class="text-center">David and Maggie</h5>
+                        <p class="text-center">Pellentesque ultricies dignissim nibh at semper. Ut tempus consectetur leo, vel placerat velit mollis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dictum massa vel sapien consectetur condimentum. </p>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimoni" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimoni" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="container border-top py-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="./images/logo-nama-maria-photography.png">
+                    <p class="mt-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="mt-2">Copyright 2021 Maria Kusnadi</p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        Jl. Lorem Ipsum no. xx<br/>
+                        Daerah<br/>
+                        Kota<br/>
+                        Negara<br/>
+                        (021) 1234 1234 123
+                    </p>
+                </div>
+                <div class="col-md-3 my-md-0 my-5">
+                    <ul id="footer-menu" class="nav w-75">
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link active" href="#">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./about.html">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./contact.html">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ps-0 nav-link" href="./todo.html">To Do App</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p>Dapatkan promo menarik dari kami</p>
+                    <form>
+                        <input type="email" class="form-control d-block mb-2" id="emailinput" placeholder="Email">
+                        <button class="btn btn-sm btn-primary d-block">Ya, saya mau!</button>
+                    </form>
+                    <p class="mt-5">Terhubung dengan Kami</p>
+                    <div class="d-flex">
+                        <span class="social-media me-2"><img src="./images/001-facebook.svg" width="36px"></span>
+                        <span class="social-media me-2"><img src="./images/011-instagram.svg"width="36px"></span>
+                        <span class="social-media me-2"><img src="./images/013-twitter.svg"width="36px"></span>
+                        <span class="social-media"><img src="./images/008-youtube.svg"width="36px"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+        <script src="./script-popup.js"></script>
+    </body>
+</html>
